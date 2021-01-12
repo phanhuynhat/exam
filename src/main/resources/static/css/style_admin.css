@@ -1,0 +1,264 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: aqua;
+}
+
+.menu {
+    float: left;
+    width: 200px;
+    font-family: "Segoe UI";
+}
+
+.content {
+    float: left;
+    width: calc(100% - 200px);
+    height: auto;
+}
+
+.move-left {
+    transform: translateX(-145px) rotateY(180deg);
+}
+
+.menu ul {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    width: auto;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid green;
+    border-right: 1px solid green;
+}
+
+.menu ul li ul{
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li ul li{
+    width: auto;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid green;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+
+.menu li a i {
+    font-size: 45px;
+}
+
+.li-dad{
+    position: relative;
+    transition: 0.4s;
+}
+
+.li-son{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    border: 1px solid;
+}
+
+.content table {
+    margin-left: 120px;
+}
+
+.h2center {
+    text-align: center;
+}
+
+#formAddProduct {
+    margin-left: 150px;
+}
+
+.login-form {
+    position: relative;
+    top: 150px;
+    width: 430px;
+    height: 270px;
+    border: 5px solid gray;
+    margin: 0 auto;
+}
+
+.fa-key {
+    width: 44px;
+    height: 50px;
+    margin: 10px 45% 10px 45%;
+    font-size: 40px;
+}
+
+.form-input {
+    width: 100%;
+    height: 100%;
+}
+
+.field {
+    display: inline;
+    font-family: "Segoe UI";
+    padding: 0 10px 10px 35px;
+}
+
+.input-data {
+    display: inline;
+    padding: 0 10px 10px 5px;
+}
+
+.button {
+    text-align: center;
+    background-color: bisque;
+}
+
+table tr {
+    height: 30px;
+}
+
+.warning {
+    margin-left: 40%;
+    color: red;
+}
+
+#collapse {
+    background-color: aqua;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 160px;
+    transition: 0.4s;
+}
+
+.menu .icon {
+    display: inline-block;
+    font-size: 40px;
+}
+.fab, .fas{
+    overflow: hidden;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.menu .name-menu {
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button-collapse {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add{
+    color: coral;
+    position: fixed;
+    right: 50px;
+    font-size: 23px;
+    border-radius: 10px;
+    top: 53px;
+}
+
+.add-product {
+    display: none;
+    width: 95%;
+    height: 100%;
+    border: 2px solid gray;
+    margin: 0 0 30px 40px;
+}
+
+.active{
+    background-color: #9fddff;
+}
+
+#result{
+    font-weight: bold;
+    color: #79bcff;
+}
+
+.table-view-category{
+    display: none;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+.pagination{
+    margin-left: 400px;
+}
+.pagination ul{
+    list-style: none;
+    display: flex;
+}
+
+.pagination ul li{
+    border: 1px solid #8787ff;
+    padding: 3px 8px 3px 8px;
+    margin-right: 10px;
+}
+
+.button-add-material{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.add-material{
+    border: 2px solid black;
+    width: 20%;
+    text-align: center;
+    display: none;
+}
+
+.hidden{
+    display: none;
+}

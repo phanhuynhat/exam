@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div class="table-view">
+    <h2 class="h2center">VIEW ALL PRODUCT</h2>
+    <table class="table" id="table-product">
+        <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Category</th>
+
+        </tr>
+        </thead>
+        <tbody class="show-list-table">
+        <th:block th:each="product,stat: ${productList}">
+            <tr>
+                <td th:text="${product.id}"></td>
+                <td th:text="${product.productName}"></td>
+                <td th:text="${product.price}"></td>
+                <td th:text="${product.categoryName}"></td>
+                <td><a class="btn btn-info" th:href="@{/editProduct/__${product.id}__ }">Edit</a></td>
+                <td><a class="btn btn-danger" th:href="@{/deleteProduct/__${product.id}__}"
+                       onclick="return ConfirmDelete();">Delete</a></td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>
+</html>

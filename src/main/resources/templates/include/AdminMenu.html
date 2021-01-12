@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div class="menu">
+    <ul>
+        <li class="icon-and-menu "><i class="fab fa-first-order"></i> <a
+                class="name-menu name-menu-addCategory icon-menu-category" onclick="addActiveClass(0)">Category</a></li>
+        <li class="icon-and-menu li-dad"><i class="fab fa-product-hunt"></i> <a
+                class="name-menu name-menu-addProduct icon-menu-product" onclick="addActiveClass(1)">Product</a>
+            <ul class="li-son">
+                <li class="icon-and-menu "><a onclick="addActiveClass(2)" class="name-menu">Export</a></li>
+                <li class="icon-and-menu "><a onclick="addActiveClass(3)" class="name-menu">Import</a></li>
+            </ul>
+        </li>
+        <li class="icon-and-menu "><i class="fas fa-user-circle"></i> <a class="name-menu" onclick="addActiveClass(4)">&nbspAccount</a>
+        </li>
+        <li class="icon-and-menu "><i class="fab fa-first-order"></i> <a class="name-menu" onclick="addActiveClass(5)">&nbspOrder</a>
+        </li>
+    </ul>
+</div>
+</html>
+

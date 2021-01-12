@@ -1,0 +1,59 @@
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Segoe UI";
+
+}
+
+.container{
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+    background: aliceblue;
+}
+.container .key{
+    font-size: 50px;
+    margin-left: 44%;
+}
+.login-form{
+    padding: 20px 40px;
+}
+.login-form .font{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.login-form .font2{
+    padding-top: 10px;
+}
+.login-form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    border: 1px solid silver;
+}
+.login-form button{
+    margin: 20px 0 15px 0;
+    height: 40px;
+    width: 50px;
+    margin-left: 44%;
+}
+
+.login-form .username_error,
+.login-form .username_error_length,
+.login-form .username_error_characters,
+.login-form .password_error,
+.login-form .password_error_length{
+    color: red;
+    font-weight: bold;
+    display: none;
+    margin-top: 5px;
+}
+
+label.error{
+    color: red;
+}
